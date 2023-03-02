@@ -9,7 +9,7 @@ def execution_path(filename):
   return os.path.join(os.path.dirname(inspect.getfile(sys._getframe(1))), filename)			
 
 filename = execution_path("1_python-ocr.jpg")
-img1 = np.array(Image.open(filename))
-text = pytesseract.image_to_string(img1)
+img = np.array(Image.open(filename))
+text = pytesseract.image_to_string(img)
 
 print(text)
