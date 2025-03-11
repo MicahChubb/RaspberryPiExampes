@@ -1,6 +1,7 @@
 # You may run into issues installing pytesseract, this is because python wants you to install things into virtual environments
 # For our usecase, venv aren't super useful as we are only making one project at a time, so use the flags below:
 # sudo pip3 install pytesseract --break-system-packages
+# https://nanonets.com/blog/ocr-with-tesseract/
 from PIL import Image
 import pytesseract
 import cv2
